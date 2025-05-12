@@ -1,20 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon"    type="image/x-icon"  href="./images/favicon-32x32.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio en Construcción</title>
+  <style>
+    /* Fuente ciberpunk opcional */
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap" rel="stylesheet">
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      color: #fff;
+      height: 100vh;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      background-size: 400% 400%;
+      animation: neonBackground 20s ease infinite;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
 
-    <title>programming challenges</title>
+    @keyframes neonBackground {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    h1 {
+      font-size: 2.5em;
+      background: linear-gradient(90deg, #ff00cc, #3333ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+      animation: flicker 2s infinite;
+    }
+
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+      }
+      20%, 24%, 55% {
+        opacity: 0.4;
+      }
+    }
+
+    p {
+      max-width: 600px;
+      font-size: 1.1em;
+      margin-bottom: 15px;
+      line-height: 1.5em;
+    }
+
+    a.button {
+      display: inline-block;
+      margin: 10px 5px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    a.button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+
+    .cv-button {
+      background-color: #00C8FF;
+      color: #fff;
+    }
+
+    .wa-button {
+      background-color: #25D366;
+      color: #fff;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-hola mundo
-    
+  <h1>🚧 Sitio en construcción 🚧</h1>
+
+  <p>Gracias por visitar <strong>Daniel Larrarte | Art3DigIA</strong>.</p>
+
+  <p>Estoy construyendo mi portafolio digital, donde pronto podrás conocer más sobre mis proyectos, habilidades en tecnología, soporte IT, automatización y creatividad digital.</p>
+
+  <p>Mientras tanto, puedes conocer más sobre mí aquí:</p>
+
+  <a href="https://tu-notion-link.com" target="_blank" class="button cv-button">📄 Ver mi CV Digital en Notion</a>
+
+  <br><br>
+
+  <p>¿Te interesa conversar directamente?</p>
+
+  <a href="https://wa.me/57XXXXXXXXX" target="_blank" class="button wa-button">💬 Contactar por WhatsApp</a>
+
+  <footer>
+    &copy; 2025 Daniel Larrarte | Art3DigIA
+  </footer>
+
+  <script>
+    // Pequeña animación para mostrar entrada de elementos (opcional)
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.style.opacity = '0';
+      setTimeout(() => {
+        document.body.style.transition = 'opacity 1.5s ease-in';
+        document.body.style.opacity = '1';
+      }, 100);
+    });
+  </script>
 </body>
 </html>
